@@ -89,6 +89,7 @@ nav.scrolled {
   justify-content: flex-end;
   flex: 1;
   color: #94a3b8;
+  font-weight: 500;
 }
 #badge span::before {
   content: "💙 ";
@@ -103,17 +104,17 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #0a192f;
-  padding: 6rem 2rem 8rem;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  padding: 6rem 5rem 16rem;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 77.14%);
 }
 #main-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 #divider-heading {
   display: flex;
@@ -151,7 +152,6 @@ main {
 }
 #hero-greeting p {
   color: white;
-  font-size: 3.5em;
   letter-spacing: 0.15rem;
   max-width: 50%;
   text-align: center;
@@ -172,4 +172,88 @@ main {
   right: -7vw;
   z-index: -1;
   pointer-events: none;
+}
+
+#circle-2 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #1f4172;
+  position: absolute;
+  top: 26vh;
+  right: 24.4vw;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#vertical-line-1 {
+  width: 0.5px;
+  height: 15em;
+  background-color: white;
+  position: absolute;
+  top: 13vh;
+  left: 25vw;
+  z-index: -1;
+  opacity: 0.2;
+}
+#vertical-line-2 {
+  width: 0.5px;
+  height: 8em;
+  background-color: #173153;
+  position: absolute;
+  top: 53vh;
+  left: 68.5vw;
+  z-index: -1;
+}
+#circle-3 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #4f5d73;
+  position: absolute;
+  top: 53.05vh;
+  left: 18.72vw;
+  z-index: -1;
+  pointer-events: none;
+}
+#diamond {
+  width: 6em;
+  height: 6em;
+  background-color: #3c485b;
+  position: absolute;
+  top: 32.7vh;
+  left: -2.42vw;
+  z-index: -1;
+  pointer-events: none;
+  transform: rotate(45deg);
+}
+
+#circle-4 {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background-color: #0f284b;
+  position: absolute;
+  top: 71vh;
+  left: -9.9vw;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#hero-message {
+  color: #94a3b8;
+  max-width: 50%;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  max-width: 500px;
+  font-family:
+    "Inter",
+    "Plus Jakarta Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-weight: 400;
 }
