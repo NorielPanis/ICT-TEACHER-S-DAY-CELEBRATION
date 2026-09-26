@@ -1,0 +1,129 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  background: #0b1c39;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #07162f 0%, #0d2145 100%);
+}
+
+main.teacher-letter-page {
+  clip-path: none;
+  overflow: visible;
+}
+
+.teacher-letter-page {
+  min-height: 100vh;
+  padding: 10.5rem 2rem 4rem;
+  background: linear-gradient(180deg, #0b1c39 0%, #111d3f 100%);
+}
+
+.teacher-letter-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-letter-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.teacher-portrait {
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(130, 180, 255, 0.2);
+  border: 1px solid rgba(130, 180, 255, 0.35);
+  font-size: 2.4rem;
+}
+
+.teacher-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  color: #8ec8ff;
+  margin-bottom: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.teacher-letter-title-wrap h1 {
+  color: #f5f9ff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-weight: 400;
+}
+
+.teacher-letter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.letter-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1rem 1rem 0.75rem;
+  min-height: 320px;
+}
+
+.letter-card h2 {
+  color: #dfeeff;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.letter-content {
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 0.4rem;
+  color: #edf6ff;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(142, 200, 255, 0.8) rgba(255, 255, 255, 0.08);
+}
+
+.letter-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.letter-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+.letter-content::-webkit-scrollbar-thumb {
+  background: rgba(142, 200, 255, 0.8);
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .teacher-letter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-letter-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
