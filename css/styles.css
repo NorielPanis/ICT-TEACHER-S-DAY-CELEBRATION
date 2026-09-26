@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -739,4 +740,208 @@ main {
   .teacher-card {
     flex: 1 1 100%;
   }
+}
+
+/* Footer Section */
+
+#footer-cont {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  min-height: 80dvh;
+  width: 100dvw;
+  background-color: rgb(11, 19, 41);
+}
+
+#footer-cont-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 0 0 45%;
+  min-width: 0;
+  gap: 0.75rem;
+  margin-left: 3dvw;
+  margin-top: 50px;
+  padding-top: 4dvh;
+  min-height: 60.3dvh;
+  background-color: transparent;
+}
+#footer-cont-left-side-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer-cont-left-side-img-wrapper img {
+  width: 4.5em;
+  height: 4.5em;
+  display: block;
+}
+#footer-cont-left-side-img-wrapper p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #fff;
+  margin-left: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#footer-cont-left-side h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: 0.08em;
+  color: #fff;
+  padding-left: 10px;
+}
+
+#footer-cont-left-side #footer-sub-hero {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding-left: 10px;
+  color: #94a3b8;
+}
+
+.footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 10px;
+  margin-top: 0.5rem;
+  max-width: 100%;
+}
+
+.footer-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f5f9ff;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+#footer-cont-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 0 0 42%;
+  min-width: 0;
+  margin-top: 50px;
+  min-height: 40dvh;
+  padding: 28px 18px 24px 32px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.footer-officers-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #82d8ff;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-members-grid {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-members-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.footer-members-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: #edf6ff;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.footer-members-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #8dc8ff;
+}
+
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 3rem 1.25rem;
+  background: rgb(5, 11, 20);
+  color: #dfeaff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.footer-bottom-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  color: #dfeaff;
+}
+
+.footer-bottom-left {
+  justify-content: flex-start;
+}
+
+.footer-bottom-right {
+  justify-content: flex-end;
+}
+
+.footer-bottom-center {
+  gap: 0.35rem;
+}
+
+.footer-bottom-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.5rem;
+  color: #8ec8ff;
+}
+
+.footer-bottom-heart {
+  color: #8ec8ff;
+  font-size: 0.85rem;
 }
